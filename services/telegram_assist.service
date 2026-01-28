@@ -1,0 +1,20 @@
+[Unit]
+Description=Telegram Assist Bot
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/telegram_assist
+ExecStart=/opt/telegram_assist/venv/bin/python main.py
+Restart=always
+RestartSec=5
+
+Environment=PYTHONUNBUFFERED=1
+
+EnvironmentFile=/opt/telegram_assist/.env
+
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

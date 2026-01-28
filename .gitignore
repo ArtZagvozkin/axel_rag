@@ -1,0 +1,22 @@
+# Environment
+.venv/
+.env
+*.env
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# Qdrant
+services/qdrant_storage
