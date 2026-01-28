@@ -3,7 +3,6 @@
 Прототип **интеллектуального ассистента для корпоративной базы знаний AxelNAC** на базе подхода **Retrieval-Augmented Generation (RAG)**.
 
 Проект покрывает ключевые этапы RAG-пайплайна:
-
 - подготовка и хранение корпуса (PostgreSQL)
 - индексация и загрузка векторных представлений (Qdrant)
 - утилиты для наполнения/обновления индекса
@@ -36,6 +35,7 @@ Python-библиотеки:
 - `psycopg`
 - `python-dotenv`
 - `qdrant-client`
+- `sentence-transformers`
 - `sentence-transformers`
 
 ---
